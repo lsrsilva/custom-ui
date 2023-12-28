@@ -5,7 +5,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 @Component({
   standalone: true,
   imports: [NxWelcomeComponent, RouterModule],
-  selector: 'custom-ui-root',
+  selector: 'cui-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
