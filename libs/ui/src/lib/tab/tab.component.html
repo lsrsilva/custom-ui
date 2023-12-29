@@ -1,0 +1,6 @@
+<ui-tab-header-row #headerRow>
+  <ng-content/>
+</ui-tab-header-row>
+<div>
+  <ng-container *ngComponentOutlet="tabBody; content: tabContent"></ng-container>
+</div>

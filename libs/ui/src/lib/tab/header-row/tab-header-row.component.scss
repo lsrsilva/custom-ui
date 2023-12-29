@@ -1,0 +1,17 @@
+.header-row {
+  display: flex;
+
+  .tab-header-control {
+    cursor: pointer;
+    display: none;
+
+    &.tab-header-control-visible {
+      display: flex;
+    }
+  }
+
+  .header-content {
+    display: flex;
+    overflow: hidden;
+  }
+}

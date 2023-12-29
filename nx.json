@@ -33,6 +33,10 @@
       "inputs": ["default", "^production"]
     }
   },
+  "workspaceLayout": {
+    "appsDir": "app",
+    "libsDir": "libs"
+  },
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [

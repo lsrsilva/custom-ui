@@ -1,1 +1,17 @@
-<custom-ui-nx-welcome></custom-ui-nx-welcome> <router-outlet></router-outlet>
+<!--<ui-tab withRouting>
+  <ui-tab-header routerLink="header1">Header1</ui-tab-header>
+  <ui-tab-header routerLink="header2">Header2</ui-tab-header>
+  <ui-tab-body>
+    <router-outlet />
+  </ui-tab-body>
+</ui-tab>-->
+
+<ui-tab>
+  @for(item of itens; let index = $index; track index) {
+    <ui-tab-header>Header {{item}}</ui-tab-header>
+    <ui-tab-body>
+      Body {{item}}
+    </ui-tab-body>
+  }
+</ui-tab>
+<router-outlet />

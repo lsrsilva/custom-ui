@@ -1,0 +1,11 @@
+<div class="header-row" #headerContainer>
+  <button class="tab-header-control" [ngClass]="{'tab-header-control-visible': showPaginationControls()}" (click)="paginate(direction.LEFT)" [disabled]="disablePrev()">
+    <ng-icon name="heroChevronLeft"></ng-icon>
+  </button>
+  <div #headerContent class="header-content">
+    <ng-content></ng-content>
+  </div>
+  <button class="tab-header-control" [ngClass]="{'tab-header-control-visible': showPaginationControls()}" (click)="paginate(direction.RIGHT)" [disabled]="disableNext()">
+    <ng-icon name="heroChevronRight"></ng-icon>
+  </button>
+</div>
